@@ -12,6 +12,7 @@ This repo is divided into 3 folders:
 Install the requirements:
 
     pip install -r requirements.txt
+Note - Python version - 3.9
 
 ## Unify Format
 
