@@ -87,9 +87,11 @@ def main():
     args = parser.parse_args()
     data_folder = args.mimic_folder
     new_data_folder = os.path.join(data_folder, "preprocessed")
-    #new_data_folder = "/home/jered/Desktop/preprocessed"
+    #new_data_folder = "/Users/askumark/DLH/preprocessing-ehr/mimic-iv-3.1/"
     if not os.path.exists(new_data_folder):
         os.mkdir(new_data_folder)
     create_report_csv(data_folder, new_data_folder)
     create_code_csv(data_folder, new_data_folder)
     create_admissions_csv(data_folder, new_data_folder)
+if __name__ == '__main__':
+    main()
