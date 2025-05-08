@@ -9,7 +9,7 @@ This script processes the codes by arranging them into two data structures:
 2. A networkx graph
 """
 
-path = '/work/frink/mcinerney.de/icd_codes'
+path = '/Users/askumark/DLH/preprocessing-ehr/icd_codes/diagnosis_codes'
 icd9_file = os.path.join(path, 'diagnoses/icd9.txt')
 icd10_file = os.path.join(path, 'diagnoses/icd10.txt')
 icd9to10_file = os.path.join(path, 'diagnoses/icd9to10.csv')
@@ -61,3 +61,5 @@ def main():
         pkl.dump(code_mapping, f)
     with open(code_graph_file, 'wb') as f:
         pkl.dump(G, f)
+if __name__ == '__main__':
+    main()
